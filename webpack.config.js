@@ -12,5 +12,12 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html'
     })
-  ]
+  ],
+devServer : {
+  static: {
+    directory: path.join(__dirname, 'public'),
+  },
+  port: 3000,
+  hot: true,
+}
 }
